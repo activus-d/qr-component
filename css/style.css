@@ -9,9 +9,7 @@ html {
 /*********************************
 LAYOUT
 *********************************/
-body {
-    max-width: 1440px;
-}
+
 main {
     height: 100vh;
     width: 100vw;
@@ -20,8 +18,7 @@ main {
     align-items: center;
 }
 .container {
-    height: 70vh;
-    width: 20vw;
+    width: 27rem;
     display: flex;
     flex-direction: column;
 }
@@ -34,29 +31,29 @@ main {
 /*********************************
 ADDITIONAL STYLES
 *********************************/
-main {
+body {
     background: hsl(212, 45%, 89%);
 }
 .container {
-    padding:  1%;
+    padding:  2rem;
     border-radius: 1rem;
     background: hsl(0, 0%, 100%) ;
 }
 .one {
-    margin-bottom: 3%;
+    margin-bottom: 3rem;
 }
 .one img {
-    height: 100%;
     width: 100%;
     border-radius: 1rem;
 }
 .two {
-    margin-top: 7%
+    margin-top: 1rem;
 }
 .two h1, .two p {
     font-size: 1.5rem;
     font-family: 'Kumbh Sans', sans-serif;
     text-align: center;
+    padding: 0 0.5rem;
 }
 .two h1 {
     font-weight: 700;
@@ -71,55 +68,10 @@ main {
 /*********************************
 MEDIA QUERIES
 *********************************/
-@media all and (min-width: 1440px) {
-    .container {
-        height: 80vh;
-        width: 30vw;
-    }
-    .one {
-        flex-basis: 75%;
-    }
-    .two {
-        flex-basis: 25%;
-    }
-    .two h1, .two p {
-        font-size: 2rem;
-    }
-}
-@media all and (max-width: 1200px) {
-    .container {
-        height: 80vh;
-        width: 30vw;
-    }
-    .one {
-        flex-basis: 75%;
-    }
-    .two {
-        flex-basis: 25%;
-    }
-    .two h1, .two p {
-        font-size: 1.5rem;
-    }
-}
-@media all and (max-width: 850px) {
-    .container {
-        height: 90vh;
-        width: 50vw;
-    }
-    .one {
-        flex-basis: 75%;
-    }
-    .two {
-        flex-basis: 25%;
-    }
-    .two h1, .two p {
-        font-size: 1.5rem;
-    }
-}
+
 @media all and (max-width: 500px) {
     .container {
-        height: 90vh;
-        width: 80vw;
+        width: 25rem;
         padding: 5%;
     }
     .one {
@@ -132,4 +84,3 @@ MEDIA QUERIES
         font-size: 1.5rem;
     }
 }
-
